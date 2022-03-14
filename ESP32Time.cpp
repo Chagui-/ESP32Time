@@ -91,7 +91,7 @@ void ESP32Time::setTime(long epoch, int ms) {
 */
 tm ESP32Time::getTimeStruct(){
   struct tm timeinfo;
-  getLocalTime(&timeinfo);
+  getLocalTime(&timeinfo, 0);
   return timeinfo;
 }
 
